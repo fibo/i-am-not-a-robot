@@ -1,0 +1,39 @@
+{
+  "name": "i-am-not-a-robot",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > docs/index.md; cat README.md >> docs/index.md",
+    "lint": "standard",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fibo/i-am-not-a-robot.git"
+  },
+  "keywords": [
+    "i",
+    "am",
+    "not",
+    "robot",
+    "spam",
+    "protection"
+  ],
+  "author": {
+    "name": "Gianluca Casati",
+    "url": "http://g14n.info"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fibo/i-am-not-a-robot/issues"
+  },
+  "homepage": "http://g14n.info/i-am-not-a-robot",
+  "devDependencies": {
+    "pre-commit": "^1.2.2",
+    "standard": "^10.0.2"
+  }
+}
