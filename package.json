@@ -4,10 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "browserify -o docs/bundle.js demo.js",
     "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > docs/index.md; cat README.md >> docs/index.md",
     "lint": "standard",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "budo -o index.js"
+    "start": "budo -l -o demo.js"
   },
   "pre-commit": [
     "lint"

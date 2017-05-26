@@ -2,17 +2,20 @@
 
 > cause I can play games
 
-Features
+[Features](#features) |
 [Installation](#installation) |
 [Usage](#usage) |
+[Demo](#demo) |
 [License](#license)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
 
 ## Features
 
-* customization
-* accessibility
+I would like to achieve the following features:
+
+* customization: cause it is fun to have your own anti spam system.
+* accessibility: it would be really sad the some human would be considered a robot.
 
 ## Installation
 
@@ -26,6 +29,21 @@ npm install i-am-not-a-robot
 
 ```javascript
 const game = require('i-am-not-a-robot').ticTacToe
+
+game(
+  document.getElementById('antispam'),
+  () => alert('You are not a robot')
+)
+```
+
+## Demo
+
+See [online demo](http://g14n.info/i-am-not-a-robot/demo.html)
+or launch demo locally
+
+```bash
+npm install
+npm run start
 ```
 
 ## License
