@@ -6,7 +6,8 @@
   "scripts": {
     "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > docs/index.md; cat README.md >> docs/index.md",
     "lint": "standard",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "budo -o index.js"
   },
   "pre-commit": [
     "lint"
@@ -33,6 +34,8 @@
   },
   "homepage": "http://g14n.info/i-am-not-a-robot",
   "devDependencies": {
+    "budo": "^10.0.3",
+    "npm-start-command": "^0.2.0",
     "pre-commit": "^1.2.2",
     "standard": "^10.0.2"
   }
