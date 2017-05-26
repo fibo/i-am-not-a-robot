@@ -2,11 +2,17 @@
 
 > cause I can play games
 
+Features
 [Installation](#installation) |
 [Usage](#usage) |
 [License](#license)
 
 [![js-standard-style](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
+## Features
+
+* customization
+* accessibility
 
 ## Installation
 
