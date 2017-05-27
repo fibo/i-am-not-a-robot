@@ -20,7 +20,6 @@ function isTris (cells) {
     for (var b = a + 1; b < choosenCells.length - 1; b++) {
       for (var c = b + 1; c < choosenCells.length; c++) {
         var combination = [choosenCells[a], choosenCells[b], choosenCells[c]].sort().join('-')
-        console.log(combination)
 
         if (winningCombinations.indexOf(combination) > -1) return true
       }
@@ -31,6 +30,24 @@ function isTris (cells) {
 }
 
 function randomCell (cells) {
+  // Try to occupy the center first.
+  if (cells.indexOf(4) === -1) return 4
+
+  // Try to block first player combination
+  if (cells.length === 3) {
+    for (var i = 0; i < 9; i++) {
+      // Skip cells already occupied.
+      if (cells.indexOf(i) > -1) continue
+
+      var combination = [cells[0], cells[2], i].join('-')
+
+      if (winningCombinations.indexOf(combination) > -1) {
+        return i
+      }
+    }
+  }
+
+  // Otherwise choose randomly.l
   const randomIndex = Math.floor(Math.random() * 8)
 
   if (cells.indexOf(randomIndex) === -1) {
@@ -67,6 +84,9 @@ function reducer (currenState, action, dispatch, callback) {
       } else {
         state.cells.push(randomCell(state.cells))
         state.isMyTurn = true
+
+        // Check if computer won.
+        if (isTris(state.cells)) callback()
       }
 
       break
