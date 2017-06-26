@@ -6,10 +6,11 @@ class Cell extends Component {
 
     this.index = index
 
-    element.style['float'] = 'left'
-    element.style['width'] = '40px'
-    element.style['height'] = '40px'
-    element.style['margin'] = '1px'
+    element.style.float = 'left'
+    element.style.width = '40px'
+    element.style.height = '40px'
+    element.style.margin = '1px'
+    element.style.borderRadius = '3px'
 
     element.onclick = function () {
       dispatch({
