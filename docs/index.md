@@ -31,7 +31,7 @@ npm install i-am-not-a-robot
 or use a CDN
 
 ```html
-<script src="https://unpkg.com/i-am-not-a-robot@0/dist/i-am-not-a-robot.min.js"></script>
+<script src="https://unpkg.com/i-am-not-a-robot/dist/i-am-not-a-robot.min.js"></script>
 ```
 
 ## Usage
