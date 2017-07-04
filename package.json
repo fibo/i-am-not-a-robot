@@ -1,13 +1,13 @@
 {
   "name": "i-am-not-a-robot",
-  "version": "0.2.0",
-  "description": "",
+  "version": "0.3.0",
+  "description": "cause I can play games",
   "main": "index.js",
   "scripts": {
     "browserify_demo": "browserify -o docs/bundle.js demo.js",
     "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > docs/index.md; cat README.md >> docs/index.md",
     "lint": "standard",
-    "postversion": "git push origin v${npm_package_version}; npm publish",
+    "postversion": "git push origin v${npm_package_version}; npm publish; git push origin master",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "budo -l -o demo.js"
   },
