@@ -1,21 +1,4 @@
-(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-'use strict';
-
-var game = require('i-am-not-a-robot').ticTacToe;
-
-var rootElement = document.createElement('div');
-document.body.appendChild(rootElement);
-
-game(rootElement, function () {
-  return window.alert('You are not a robot');
-});
-
-},{"i-am-not-a-robot":2}],2:[function(require,module,exports){
-'use strict';
-
-exports.ticTacToe = require('./src/ticTacToe');
-
-},{"./src/ticTacToe":7}],3:[function(require,module,exports){
+require=(function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -84,7 +67,7 @@ var Cell = function (_Component) {
 
 module.exports = Cell;
 
-},{"./Component":4}],4:[function(require,module,exports){
+},{"./Component":2}],2:[function(require,module,exports){
 'use strict';
 
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
@@ -124,7 +107,7 @@ var Component = function () {
 
 module.exports = Component;
 
-},{}],5:[function(require,module,exports){
+},{}],3:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -157,7 +140,7 @@ var Root = function (_Component) {
 
 module.exports = Root;
 
-},{"./Component":4,"./Row":6}],6:[function(require,module,exports){
+},{"./Component":2,"./Row":4}],4:[function(require,module,exports){
 'use strict';
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -192,7 +175,7 @@ var Row = function (_Component) {
 
 module.exports = Row;
 
-},{"./Cell":3,"./Component":4}],7:[function(require,module,exports){
+},{"./Cell":1,"./Component":2}],5:[function(require,module,exports){
 'use strict';
 
 var Root = require('./components/Root');
@@ -220,7 +203,7 @@ function ticTacToe(element, callback) {
 
 module.exports = ticTacToe;
 
-},{"./components/Root":5,"./reducer":8}],8:[function(require,module,exports){
+},{"./components/Root":3,"./reducer":6}],6:[function(require,module,exports){
 'use strict';
 
 var winningCombinations = ['0-1-2', '3-4-5', '6-7-8', '0-3-6', '1-4-7', '2-5-8', '0-4-8', '2-4-6'];
@@ -313,4 +296,9 @@ function reducer(currenState, action, dispatch, callback) {
 
 module.exports = reducer;
 
-},{}]},{},[1]);
+},{}],"i-am-not-a-robot":[function(require,module,exports){
+'use strict';
+
+exports.ticTacToe = require('./src/ticTacToe');
+
+},{"./src/ticTacToe":5}]},{},[]);

@@ -1,4 +1,4 @@
-const game = require('./index').ticTacToe
+const game = require('i-am-not-a-robot').ticTacToe
 
 const rootElement = document.createElement('div')
 document.body.appendChild(rootElement)
