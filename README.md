@@ -18,7 +18,7 @@
 I would like to achieve the following features:
 
 * customization: cause it is fun to have your own anti spam system.
-* accessibility: it would be really sad the some human would be considered a robot.
+* accessibility: it would be really sad if some human would be considered a robot.
 
 ## Installation
 
