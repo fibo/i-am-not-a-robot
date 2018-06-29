@@ -1,6 +1,6 @@
 {
   "name": "i-am-not-a-robot",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "cause I can play games",
   "main": "i-am-not-a-robot.js",
   "scripts": {
