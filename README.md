@@ -15,8 +15,12 @@
 
 ## Features
 
+Why not reCAPTCHA? Cause then you should deal with its *Terms of Service*
+and *Privacy Policy*: this is the **main feature**.
+
 I would like to achieve the following features:
 
+* more games: a bot can play one game, its intelligence is not multi purpouse.
 * customization: cause it is fun to have your own anti spam system.
 * accessibility: it would be really sad if some human would be considered a robot.
 
@@ -36,13 +40,25 @@ or use a CDN
 
 ## Usage
 
+Suppose you have a div like this
+
+```html
+<div id="antispam"></div>
+```
+
+Then you can mount *ticTacToe* game with the following code. The callback
+will be triggered when on game end, regardeless of whether or not user
+win or loses.
+
 ```javascript
 const game = require('i-am-not-a-robot').ticTacToe
 
-game(
-  document.getElementById('antispam'),
-  () => alert('You are not a robot')
-)
+const callback = () => {
+  // Usually you may want to enable a submit button here.
+  alert('You are not a robot')
+}
+
+game(document.getElementById('antispam'), callback)
 ```
 
 ## Demo
