@@ -1,2 +1,5 @@
 node_modules
 npm-start.command
+
+# Used only for build.
+dist/i-am-not-a-robot.js
