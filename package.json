@@ -6,7 +6,7 @@
   "scripts": {
     "browserify": "npm run browserify_demo; npm run browserify_dist; npm run minify",
     "browserify_demo": "NODE_PATH=. browserify -o docs/bundle.js demo.js",
-    "browserify_dist": "browserify ${npm_package_main} -g [ envify --NODE_ENV production ] -g uglifyify -o dist/${npm_package_name}.js",
+    "browserify_dist": "browserify -r ./${npm_package_name}.js:${npm_package_name} -g [ envify --NODE_ENV production ] -g uglifyify -o dist/${npm_package_name}.js",
     "build": "npm run browserify; npm run homepage",
     "homepage": "echo \"---\ntitle: $npm_package_name\n---\" > docs/index.md; cat README.md >> docs/index.md",
     "lint": "standa src/**/*.js",
