@@ -10,7 +10,7 @@
 
 [![NPM version](https://badge.fury.io/js/i-am-not-a-robot.svg)](http://badge.fury.io/js/i-am-not-a-robot)
 [![Badge size](https://badge-size.herokuapp.com/fibo/i-am-not-a-robot/master/dist/i-am-not-a-robot.min.js)](https://github.com/fibo/i-am-not-a-robot/blob/master/dist/i-am-not-a-robot.min.js)
-[![Dependency Status](https://gemnasium.com/fibo/i-am-not-a-robot.svg)](https://gemnasium.com/fibo/i-am-not-a-robot)
+[![No deps](https://img.shields.io/badge/dependencies-none-green.svg)](https://github.com/fibo/i-am-not-a-robot)
 [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Features
