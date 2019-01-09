@@ -11,6 +11,7 @@ class Cell extends Component {
     element.style.height = '40px'
     element.style.margin = '1px'
     element.style.borderRadius = '3px'
+    element.style.boxShadow = '1px 1px 2px 0px rgba(0,0,0,0.75)'
 
     element.onclick = function () {
       dispatch({
