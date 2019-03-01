@@ -1,6 +1,6 @@
 {
   "name": "i-am-not-a-robot",
-  "version": "0.5.2",
+  "version": "0.6.0",
   "description": "cause I can play games",
   "main": "i-am-not-a-robot.js",
   "scripts": {
@@ -44,12 +44,12 @@
   },
   "homepage": "http://g14n.info/i-am-not-a-robot",
   "devDependencies": {
-    "budo": "^11.3.2",
+    "budo": "^11.5.0",
     "envify": "^4.1.0",
-    "npm-run-all": "^4.1.3",
+    "npm-run-all": "^4.1.5",
     "npm-start-command": "^0.2.0",
     "pre-commit": "^1.2.2",
-    "standa": "^2.1.0",
+    "standa": "^12.0.1",
     "uglify-es": "^3.3.9",
     "uglifyify": "^5.0.1"
   },
