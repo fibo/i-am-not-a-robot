@@ -1,5 +1,8 @@
 node_modules
-npm-start.command
+
+# npm-start-command
+_MacOS.npm-start.command
+_Windows.npm-start.bat
 
 # Used only for build.
 dist/i-am-not-a-robot.js

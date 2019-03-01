@@ -44,10 +44,10 @@
   },
   "homepage": "http://g14n.info/i-am-not-a-robot",
   "devDependencies": {
-    "budo": "^11.5.0",
+    "budo": "^11.6.1",
     "envify": "^4.1.0",
     "npm-run-all": "^4.1.5",
-    "npm-start-command": "^0.2.0",
+    "npm-start-command": "^1.0.0",
     "pre-commit": "^1.2.2",
     "standa": "^12.0.1",
     "uglify-es": "^3.3.9",
