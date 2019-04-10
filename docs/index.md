@@ -41,6 +41,8 @@ or use a CDN
 <script src="https://unpkg.com/i-am-not-a-robot/dist/i-am-not-a-robot.min.js"></script>
 ```
 
+In case you use the dist build, you will find a global variable available: `Iamnotarobot`.
+
 ## Usage
 
 Suppose you have a div like this

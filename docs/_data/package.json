@@ -1,12 +1,12 @@
 {
   "name": "i-am-not-a-robot",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "description": "cause I can play games",
   "main": "i-am-not-a-robot.js",
   "scripts": {
     "browserify": "npm run browserify_demo; npm run browserify_dist; npm run minify",
     "browserify_demo": "NODE_PATH=. browserify -o docs/bundle.js demo.js",
-    "browserify_dist": "browserify -r ./${npm_package_name}.js:${npm_package_name} -g [ envify --NODE_ENV production ] -g uglifyify -o dist/${npm_package_name}.js",
+    "browserify_dist": "browserify -e ./${npm_package_name}.js -s Iamnotarobot -g [ envify --NODE_ENV production ] -g uglifyify -o dist/${npm_package_name}.js",
     "build": "npm run browserify; npm run docs",
     "docs": "run-s docs:*",
     "docs:package.json": "cp package.json docs/_data",
@@ -44,10 +44,10 @@
   },
   "homepage": "http://g14n.info/i-am-not-a-robot",
   "devDependencies": {
-    "budo": "^11.5.0",
+    "budo": "^11.6.1",
     "envify": "^4.1.0",
     "npm-run-all": "^4.1.5",
-    "npm-start-command": "^0.2.0",
+    "npm-start-command": "^1.0.0",
     "pre-commit": "^1.2.2",
     "standa": "^12.0.1",
     "uglify-es": "^3.3.9",
