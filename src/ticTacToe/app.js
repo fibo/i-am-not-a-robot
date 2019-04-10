@@ -45,4 +45,4 @@ function app (initialState) {
   }
 }
 
-module.exports = app
+module.exports = exports.default = app
