@@ -61,7 +61,7 @@ function reducer (currenState, action, dispatch, callback) {
   var state = Object.assign({}, currenState)
 
   switch (action.type) {
-    case 'PLAYER_CHOOSES_CELL':
+    case 'PLAYER_CHOOSES_CELL': {
       const cellIsFree = state.cells.indexOf(action.index) === -1
 
       if (cellIsFree && state.isMyTurn) {
@@ -76,8 +76,9 @@ function reducer (currenState, action, dispatch, callback) {
       }
 
       break
+    }
 
-    case 'IS_COMPUTER_TURN':
+    case 'IS_COMPUTER_TURN': {
       const gameOver = state.cells.length === 9
       if (gameOver || isTris(state.cells)) {
         callback()
@@ -90,6 +91,7 @@ function reducer (currenState, action, dispatch, callback) {
       }
 
       break
+    }
   }
 
   return state

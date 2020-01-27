@@ -65,7 +65,7 @@ game(document.getElementById('antispam'), callback)
 
 ## Demo
 
-See [online demo](http://g14n.info/i-am-not-a-robot/demo.html)
+See [online demo](http://g14n.info/i-am-not-a-robot/demo/index.html)
 or launch demo locally
 
 ```bash
